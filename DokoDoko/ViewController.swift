@@ -59,28 +59,28 @@ class ViewController: UIViewController,CLLocationManagerDelegate, MKMapViewDeleg
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
         print("Failed to find user's")
     }
-    private func showPins(){
-        for photoInfo in photoInfoArray {
-            let longtitude = photoInfo.longtitude
-            let latitude = photoInfo.latitude
-            
-            guard let longtitude = longtitude as? CLLocationDegrees , let  latitude = latitude as? CLLocationDegrees  else  {return}
-            
-            let  annotation = PhotoInfoAnnotation(photoInfo: photoInfo)
-            
-            annotation.coordinate = CLLocationCoordinate2DMake (latitude,longtitude)
-            
-            
-            
-            
-            mapView.addAnnotation(annotation)
-            
-            
-            
-            
-            
-        }
-    }
+//    private func showPins(){
+//        for photoInfo in photoInfoArray {
+//            let longtitude = photoInfo.longtitude
+//            let latitude = photoInfo.latitude
+//
+//            guard let longtitude = longtitude as? CLLocationDegrees , let  latitude = latitude as? CLLocationDegrees  else  {return}
+//
+//            let  annotation = PhotoInfoAnnotation(photoInfo: photoInfo)
+//
+//            annotation.coordinate = CLLocationCoordinate2DMake (latitude,longtitude)
+//
+//
+//
+//
+//            mapView.addAnnotation(annotation)
+//
+//
+//
+//
+//
+//        }
+//    }
     
     
 }
