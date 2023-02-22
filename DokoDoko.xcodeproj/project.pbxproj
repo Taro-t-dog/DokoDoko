@@ -16,6 +16,8 @@
 		AF49E7FC29A5E29E00A393AB /* DokoDokoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF49E7FB29A5E29E00A393AB /* DokoDokoTests.swift */; };
 		AF49E80629A5E29E00A393AB /* DokoDokoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF49E80529A5E29E00A393AB /* DokoDokoUITests.swift */; };
 		AF49E80829A5E29E00A393AB /* DokoDokoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF49E80729A5E29E00A393AB /* DokoDokoUITestsLaunchTests.swift */; };
+		AF49E81529A5F4A500A393AB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AF49E81429A5F4A500A393AB /* GoogleService-Info.plist */; };
+		AF49E81929A6000600A393AB /* photoInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF49E81829A6000600A393AB /* photoInfo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		AF49E80129A5E29E00A393AB /* DokoDokoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DokoDokoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF49E80529A5E29E00A393AB /* DokoDokoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DokoDokoUITests.swift; sourceTree = "<group>"; };
 		AF49E80729A5E29E00A393AB /* DokoDokoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DokoDokoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		AF49E81429A5F4A500A393AB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		AF49E81829A6000600A393AB /* photoInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = photoInfo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,8 +108,10 @@
 				AF49E7E829A5E29D00A393AB /* ViewController.swift */,
 				AF49E7EA29A5E29D00A393AB /* Main.storyboard */,
 				AF49E7ED29A5E29D00A393AB /* Assets.xcassets */,
+				AF49E81829A6000600A393AB /* photoInfo.swift */,
 				AF49E7EF29A5E29D00A393AB /* LaunchScreen.storyboard */,
 				AF49E7F229A5E29D00A393AB /* Info.plist */,
+				AF49E81429A5F4A500A393AB /* GoogleService-Info.plist */,
 			);
 			path = DokoDoko;
 			sourceTree = "<group>";
@@ -234,6 +240,7 @@
 				AF49E7F129A5E29D00A393AB /* LaunchScreen.storyboard in Resources */,
 				AF49E7EE29A5E29D00A393AB /* Assets.xcassets in Resources */,
 				AF49E7EC29A5E29D00A393AB /* Main.storyboard in Resources */,
+				AF49E81529A5F4A500A393AB /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +265,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF49E81929A6000600A393AB /* photoInfo.swift in Sources */,
 				AF49E7E929A5E29D00A393AB /* ViewController.swift in Sources */,
 				AF49E7E529A5E29D00A393AB /* AppDelegate.swift in Sources */,
 				AF49E7E729A5E29D00A393AB /* SceneDelegate.swift in Sources */,
