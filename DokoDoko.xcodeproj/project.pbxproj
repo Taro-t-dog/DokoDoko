@@ -16,6 +16,11 @@
 		AF49E7FC29A5E29E00A393AB /* DokoDokoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF49E7FB29A5E29E00A393AB /* DokoDokoTests.swift */; };
 		AF49E80629A5E29E00A393AB /* DokoDokoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF49E80529A5E29E00A393AB /* DokoDokoUITests.swift */; };
 		AF49E80829A5E29E00A393AB /* DokoDokoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF49E80729A5E29E00A393AB /* DokoDokoUITestsLaunchTests.swift */; };
+		EBD8990C29A5F5250001A24E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EBD8990B29A5F5250001A24E /* GoogleService-Info.plist */; };
+		EBD8990F29A5F7A30001A24E /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = EBD8990E29A5F7A30001A24E /* FirebaseAuth */; };
+		EBD8991129A5F7A30001A24E /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = EBD8991029A5F7A30001A24E /* FirebaseFirestore */; };
+		EBD8991329A5F7A30001A24E /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = EBD8991229A5F7A30001A24E /* FirebaseStorage */; };
+		EBD8991529A5F8200001A24E /* AuthModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD8991429A5F8200001A24E /* AuthModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +54,8 @@
 		AF49E80129A5E29E00A393AB /* DokoDokoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DokoDokoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF49E80529A5E29E00A393AB /* DokoDokoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DokoDokoUITests.swift; sourceTree = "<group>"; };
 		AF49E80729A5E29E00A393AB /* DokoDokoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DokoDokoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		EBD8990B29A5F5250001A24E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		EBD8991429A5F8200001A24E /* AuthModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +63,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBD8990F29A5F7A30001A24E /* FirebaseAuth in Frameworks */,
+				EBD8991129A5F7A30001A24E /* FirebaseFirestore in Frameworks */,
+				EBD8991329A5F7A30001A24E /* FirebaseStorage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,10 +112,12 @@
 				AF49E7E429A5E29D00A393AB /* AppDelegate.swift */,
 				AF49E7E629A5E29D00A393AB /* SceneDelegate.swift */,
 				AF49E7E829A5E29D00A393AB /* ViewController.swift */,
+				EBD8991629A5F8250001A24E /* Model */,
 				AF49E7EA29A5E29D00A393AB /* Main.storyboard */,
 				AF49E7ED29A5E29D00A393AB /* Assets.xcassets */,
 				AF49E7EF29A5E29D00A393AB /* LaunchScreen.storyboard */,
 				AF49E7F229A5E29D00A393AB /* Info.plist */,
+				EBD8990B29A5F5250001A24E /* GoogleService-Info.plist */,
 			);
 			path = DokoDoko;
 			sourceTree = "<group>";
@@ -127,6 +139,14 @@
 			path = DokoDokoUITests;
 			sourceTree = "<group>";
 		};
+		EBD8991629A5F8250001A24E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EBD8991429A5F8200001A24E /* AuthModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +163,11 @@
 			dependencies = (
 			);
 			name = DokoDoko;
+			packageProductDependencies = (
+				EBD8990E29A5F7A30001A24E /* FirebaseAuth */,
+				EBD8991029A5F7A30001A24E /* FirebaseFirestore */,
+				EBD8991229A5F7A30001A24E /* FirebaseStorage */,
+			);
 			productName = DokoDoko;
 			productReference = AF49E7E129A5E29D00A393AB /* DokoDoko.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +240,9 @@
 				Base,
 			);
 			mainGroup = AF49E7D829A5E29D00A393AB;
+			packageReferences = (
+				EBD8990D29A5F7A30001A24E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = AF49E7E229A5E29D00A393AB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -248,6 +276,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBD8990C29A5F5250001A24E /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +290,7 @@
 				AF49E7E929A5E29D00A393AB /* ViewController.swift in Sources */,
 				AF49E7E529A5E29D00A393AB /* AppDelegate.swift in Sources */,
 				AF49E7E729A5E29D00A393AB /* SceneDelegate.swift in Sources */,
+				EBD8991529A5F8200001A24E /* AuthModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,7 +467,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = DLGM554ZJT;
+				DEVELOPMENT_TEAM = 5VXR3TJUR7;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = DokoDoko/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -445,6 +475,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -465,7 +496,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = DLGM554ZJT;
+				DEVELOPMENT_TEAM = 5VXR3TJUR7;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = DokoDoko/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -473,6 +504,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -602,6 +634,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EBD8990D29A5F7A30001A24E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EBD8990E29A5F7A30001A24E /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EBD8990D29A5F7A30001A24E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		EBD8991029A5F7A30001A24E /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EBD8990D29A5F7A30001A24E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		EBD8991229A5F7A30001A24E /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EBD8990D29A5F7A30001A24E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AF49E7D929A5E29D00A393AB /* Project object */;
 }
